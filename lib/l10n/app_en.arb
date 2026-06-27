@@ -1,0 +1,23 @@
+{
+    "@@locale": "en",
+    "appTitle": "LIFT it UP",
+    "@appTitle": {
+        "description": "The title of the application"
+    },
+    "homeTab": "Home",
+    "@homeTab": {
+        "description": "Bottom navigation label for Home"
+    },
+    "settingsTab": "Settings",
+    "@settingsTab": {
+        "description": "Bottom navigation label for Settings"
+    },
+    "unknownRoute": "404 - Page Not Found",
+    "@unknownRoute": {
+        "description": "Message for unknown routes"
+    },
+    "backToHome": "Back to Home",
+    "@backToHome": {
+        "description": "Button label to go back to home"
+    }
+}
