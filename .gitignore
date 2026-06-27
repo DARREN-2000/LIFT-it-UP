@@ -216,3 +216,61 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Flutter/Dart/Pub
+.dart_tool/
+.packages
+build/
+.pub-cache/
+.pub/
+/build/
+
+# Android
+android/app/build/
+android/.gradle/
+android/app/src/main/res/values-night/styles.xml
+android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+
+# iOS
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/app.flx
+ios/Flutter/app.zip
+ios/Flutter/flutter_assets/
+ios/Flutter/flutter_export_environment.sh
+ios/Pods/
+
+# macOS
+macos/Flutter/GeneratedPluginRegistrant.swift
+macos/Flutter/ephemeral/
+
+# Web
+web/icons/Icon-maskable-192.png
+
+# Windows
+windows/flutter/ephemeral/
+windows/flutter/generated_plugin_registrant.cc
+
+# Linux
+linux/flutter/ephemeral/
+linux/flutter/generated_plugin_registrant.cc
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.class
+*.log
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.jar
+
+# macOS
+.DS_Store
