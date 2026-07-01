@@ -12,6 +12,8 @@ import 'package:lift_it_up/features/profile/presentation/screens/onboarding_scre
 import 'package:lift_it_up/features/profile/presentation/screens/profile_screen.dart';
 import 'package:lift_it_up/features/profile/presentation/screens/edit_profile_screen.dart';
 import 'package:lift_it_up/features/auth/providers/auth_providers.dart';
+import 'package:lift_it_up/features/exercises/presentation/screens/exercises_screen.dart';
+import 'package:lift_it_up/features/exercises/presentation/screens/exercise_detail_screen.dart';
 import 'package:lift_it_up/core/widgets/error_view.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>();
@@ -86,6 +88,23 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           return AppShell(navigationShell: navigationShell);
         },
         branches: [
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/exercises',
+                builder: (context, state) => const ExercisesScreen(),
+                routes: [
+                  GoRoute(
+                    path: ':id',
+                    builder: (context, state) {
+                      final id = state.pathParameters['id']!;
+                      return ExerciseDetailScreen(exerciseId: id);
+                    },
+                  ),
+                ],
+              ),
+            ],
+          ),
           StatefulShellBranch(
             routes: [
               GoRoute(
